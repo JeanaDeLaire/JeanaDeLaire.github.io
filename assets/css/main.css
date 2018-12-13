@@ -1281,6 +1281,7 @@ input, select, textarea {
 			transition: opacity 0.2s ease-in-out;
 			position: absolute;
 			top: 0;
+      background-color: red;
 			width: 50%;
 			height: 100%;
 			opacity: 0;
