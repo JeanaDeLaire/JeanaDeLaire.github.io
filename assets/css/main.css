@@ -46,6 +46,13 @@ blockquote, q {
 		content: none;
 	}
 
+#devicons {
+  font-size: 5vw;
+  margin: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -1992,17 +1999,25 @@ input, select, textarea {
 			}
 
 			.main.style2.left {
-				-moz-justify-content: -moz-flex-start;
+				/* -moz-justify-content: -moz-flex-start;
 				-webkit-justify-content: -webkit-flex-start;
 				-ms-justify-content: -ms-flex-start;
-				justify-content: flex-start;
+				justify-content: flex-start; */
+        -moz-justify-content: -moz-flex-center;
+        -webkit-justify-content: -webkit-flex-center;
+        -ms-justify-content: -ms-flex-center;
+        justify-content: center;
 			}
 
 			.main.style2.right {
-				-moz-justify-content: -moz-flex-end;
-				-webkit-justify-content: -webkit-flex-end;
-				-ms-justify-content: -ms-flex-end;
-				justify-content: flex-end;
+				/* -moz-justify-content: -moz-flex-end; */
+        -moz-justify-content: -moz-flex-center;
+				/* -webkit-justify-content: -webkit-flex-end; */
+        -webkit-justify-content: -webkit-flex-center;
+				/* -ms-justify-content: -ms-flex-end; */
+        -ms-justify-content: -ms-flex-center;
+				/* justify-content: flex-end; */
+        justify-content: center;
 			}
 
 			.main.style2.inactive.left > .content {
