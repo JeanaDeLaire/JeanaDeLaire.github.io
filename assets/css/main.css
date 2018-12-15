@@ -79,6 +79,15 @@ input, select, textarea {
 	appearance: none;
 }
 
+#headshot {
+  border-radius: 20px;
+  width: 40vw;
+  height: auto;
+  display: inline-flex;
+  float: right;
+  align-self: right;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2003,10 +2012,10 @@ input, select, textarea {
 				-webkit-justify-content: -webkit-flex-start;
 				-ms-justify-content: -ms-flex-start;
 				justify-content: flex-start; */
-        -moz-justify-content: -moz-flex-center;
-        -webkit-justify-content: -webkit-flex-center;
-        -ms-justify-content: -ms-flex-center;
-        justify-content: center;
+        -moz-justify-content: -moz-flex-space-between;
+        -webkit-justify-content: -webkit-flex-space-between;
+        -ms-justify-content: -ms-flex-space-between;
+        justify-content: space-between;
 			}
 
 			.main.style2.right {
@@ -2268,6 +2277,7 @@ input, select, textarea {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+    padding: 0 3vw;
 	}
 
 /* Contact */
