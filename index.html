@@ -4,13 +4,20 @@
       <title>Jeana M. DeLaire</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   		<link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
-  		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  		<noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <!-- <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script> -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body class="is-preload">
 
@@ -82,7 +89,7 @@
               <!-- Gallery  -->
                 <div id="work" class="gallery">
                   <article class="from-left">
-                    <a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Reds" alt="" data-toggle="modal" data-target="#exampleModal"/></a>
+                    <a class="image fit" data-toggle="modal" data-target="#basicExampleModal"><img src="images/thumbs/01.jpg" title="The Anonymous Reds" alt=""/></a>
                   </article>
                   <article class="from-right">
                     <a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
@@ -106,31 +113,26 @@
             </div>
           </section>
 
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal
-</button>
+          <!-- Modal -->
+          <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:10%;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body image fit modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h3>Game Project</h3>
+                  <img src="images/fulls/01.jpg"/>
+                  <div>
+                    <p>
+                      Building a web-application version of tic-tac-toe offered the opportunity to gain hands on experience in game logic. Through integrating with a third-party API, users can sign up to track game history and play through the games. Technologies used include HTML5, CSS, Bootstrap, as well as Javascript and jQuery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
   		<!-- One -->
   			<!-- <section id="one" class="main style2 right dark fullscreen">
@@ -208,6 +210,7 @@
   			<script src="assets/js/breakpoints.min.js"></script>
   			<script src="assets/js/util.js"></script>
   			<script src="assets/js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
     </body>
 </html>
