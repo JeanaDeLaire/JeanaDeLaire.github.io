@@ -89,10 +89,10 @@
               <!-- Gallery  -->
                 <div id="work" class="gallery">
                   <article class="from-left">
-                    <a class="image fit" data-toggle="modal" data-target="#basicExampleModal"><img src="images/thumbs/01.jpg" title="The Anonymous Reds" alt=""/></a>
+                    <a class="image fit" data-toggle="modal" data-target="#ttt"><img src="images/thumbs/01.jpg" alt=""/></a>
                   </article>
                   <article class="from-right">
-                    <a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+                    <a class="image fit" data-toggle="modal" data-target="#rhody"><img src="images/thumbs/02.jpg" alt=""/></a>
                   </article>
                   <article class="from-left">
                     <a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
@@ -113,19 +113,50 @@
             </div>
           </section>
 
-          <!-- Modal -->
-          <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:10%;">
+          <!-- Tic-Tac-Toe -->
+          <div class="modal fade" id="ttt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:8%;">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-body image fit modal-content">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <h3>Game Project</h3>
-                  <img src="images/fulls/01.jpg"/>
+                  <h2>Game Project</h2>
+                  <video controls="controls" width="375" height="auto"
+                   name="Video Name" src="images/fulls/ttt.mov"></video>
+                  <!-- <img src="images/fulls/01.jpg"/> -->
+                  <div class="container" style="flex-direction: row; justify-content: center; align-items: center; width: inherit; text-align: center;">
+                  <div class="col-sm-12" style="">
+                    <a href="https://jeanadelaire.github.io/tic-tac-toe-client/" data-target="#" target="_blank">Go play Tic-Tac-Toe</a>
+                  </div>
+                  </div>
                   <div>
                     <p>
                       Building a web-application version of tic-tac-toe offered the opportunity to gain hands on experience in game logic. Through integrating with a third-party API, users can sign up to track game history and play through the games. Technologies used include HTML5, CSS, Bootstrap, as well as Javascript and jQuery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rhodypedia -->
+          <div class="modal fade" id="rhody" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:8%;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body image fit modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <img src="images/fulls/02.jpg"/>
+                  <div class="container" style="flex-direction: row; justify-content: center; align-items: center; width: inherit; text-align: center;">
+                  <div class="col-sm-12" style="">
+                    <a href="https://jeanadelaire.github.io/front-project-2/" data-target="#" target="_blank">Visit Rhodypedia</a>
+                  </div>
+                  </div>
+                  <div>
+                    <p>
+                      This full-stack app is deployed to Heroku and uses Rails as its back-end framework. The front-end utilizes HTML5, CSS and Bootstrap. Javascript and jQuery handle site interaction and help present data to users. Handlbars displays the information from the database through a grid template. The searchbar filters through keywords through javascript and pushes in relevant matches into a new array which is passed through handlebars. This project was completed for a full-stack development training course and I intend to further build out the site and add in the ability for users to add photos, comments, and site moderators.
                     </p>
                   </div>
                 </div>
