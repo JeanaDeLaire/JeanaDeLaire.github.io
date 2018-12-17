@@ -80,12 +80,12 @@ input, select, textarea {
 }
 
 #headshot {
-  border-radius: 20px;
+  border-radius: 25px;
   width: 40vw;
   height: auto;
-  display: inline-flex;
-  float: right;
-  align-self: right;
+  display: flex;
+  margin-left: 30px;
+  /* align-self: right; */
 }
 
 /* Basic */
@@ -729,6 +729,11 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			text-indent: -10em;
 			overflow: hidden;
+      bottom: 0;
+      border-bottom: 0;
+      border-radius: 3em 3em 0 0;
+      height: 4.5em;
+      margin-left: -2.5em;
 		}
 
 			input[type="button"].down.anchored,
@@ -1468,7 +1473,7 @@ input, select, textarea {
 			width: 50%;
 			position: relative;
 			opacity: 1.0;
-			padding: 10px;
+			padding: 5px;
 		}
 
 			.gallery article .image {
@@ -2301,6 +2306,9 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
     padding: 0 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 	}
 
 /* Contact */
