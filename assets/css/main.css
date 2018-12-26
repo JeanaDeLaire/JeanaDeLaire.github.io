@@ -133,7 +133,11 @@ q::after {
   margin: 20px 20px 0 20px;
   display: flex;
   justify-content: space-around;
-  padding-top: 5px;
+  padding: 5px 0 2px 0;
+}
+
+.devcon:hover {
+  transform: scale(1.1);
 }
 
 mark {
@@ -1554,11 +1558,12 @@ body.is-touch .poptrox-popup .closer {
   width: 50%;
   position: relative;
   opacity: 1;
-  padding: 5px;
+  margin-bottom: -2px;
 }
 
 .gallery article .image {
   margin: 0;
+  cursor: pointer;
   display: block;
 }
 
