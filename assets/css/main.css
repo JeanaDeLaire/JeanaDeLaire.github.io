@@ -136,6 +136,10 @@ q::after {
   padding: 5px 0 2px 0;
 }
 
+.devcon:hover {
+  transform: scale(1.1);
+}
+
 .contact-group {
   text-align: left;
   width: 50%;
@@ -145,10 +149,6 @@ q::after {
 .float-left {
   margin-left: 10%;
   margin-right: 1.8%;
-}
-
-.devcon:hover {
-  transform: scale(1.1);
 }
 
 mark {
@@ -172,10 +172,12 @@ input::-moz-focus-inner {
 
 #headshot {
   border-radius: 25px;
-  width: 30vw;
+  width: 90%;
+  /* min-width: 350px; */
+  max-width: 450px;
   height: auto;
   display: flex;
-  margin-left: 30px;
+  /* margin-left: 15px */
 }
 
 /* Basic */
@@ -576,7 +578,7 @@ body::before {
   position: fixed;
   text-align: center;
   top: 50%;
-  width: 2em;
+  /* width: 2em; */
   z-index: -1;
 }
 
@@ -2208,7 +2210,7 @@ body.is-touch .main {
 
 @media screen and (max-width: 1920px) {
   .main.style2 .content {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -2220,7 +2222,7 @@ body.is-touch .main {
 
 @media screen and (max-width: 1000px) {
   .main.style2 .content {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -2262,6 +2264,7 @@ body.is-touch .main {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+    overflow-y: scroll;
   }
 
   .main.style3 {
@@ -2386,6 +2389,7 @@ body.is-touch .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
 }
 
 /* Contact */
@@ -2415,9 +2419,26 @@ body.is-touch .main {
   transform: translateY(100%);
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 750px) {
   #contact .box {
     padding: 1.5em 1.5em 2em 1.5em;
+  }
+
+  #two {
+    flex-direction: column;
+    padding-top: 15px;
+    margin: 0 10px;
+  }
+
+  #devicons {
+    margin: 15px 10px 0 10px;
+    font-size: 7vw;
+  }
+
+  #headshot {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
   }
 }
 
