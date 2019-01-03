@@ -170,16 +170,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-#headshot {
-  border-radius: 25px;
-  width: 90%;
-  /* min-width: 350px; */
-  max-width: 450px;
-  height: auto;
-  display: flex;
-  /* margin-left: 15px */
-}
-
 /* Basic */
 
 @-ms-viewport {
@@ -2387,9 +2377,21 @@ body.is-touch .main {
   background-position: top left, center center;
   padding: 0 3vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+#two-box {
+  margin-right: 1vw;
+}
+
+#headshot {
+  border-radius: 25px;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  margin-left: 3vw;
 }
 
 /* Contact */
@@ -2427,7 +2429,6 @@ body.is-touch .main {
   #two {
     flex-direction: column;
     padding-top: 15px;
-    margin: 0 10px;
   }
 
   #devicons {
@@ -2435,15 +2436,32 @@ body.is-touch .main {
     font-size: 7vw;
   }
 
+  .list-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .d-flex {
+    width: 60vw;
+  }
+
   #headshot {
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 100%;gi
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   #contact .box {
     padding: 1em 1em 2em 1em;
+  }
+
+  .d-flex {
+    width: 75vw;
   }
 }
