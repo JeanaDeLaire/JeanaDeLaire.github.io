@@ -147,8 +147,8 @@ q::after {
 }
 
 .float-left {
-  margin-left: 10%;
-  margin-right: 1.8%;
+  margin-left: 5%;
+  margin-right: 2%;
 }
 
 mark {
@@ -203,7 +203,6 @@ body.is-preload *::after {
 .modal-content {
   background-color: white;
   text-align: center;
-  margin-top: -20px;
 }
 
 .modal.fade .modal-dialog {
@@ -2392,6 +2391,11 @@ body.is-touch .main {
   max-width: 450px;
   height: auto;
   margin-left: 3vw;
+}
+
+#ttt-video {
+  width: inherit;
+  height: auto;
 }
 
 /* Contact */
