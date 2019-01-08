@@ -2374,7 +2374,7 @@ body.is-touch .main {
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
-  padding: 0 3vw;
+  padding: 0 3vw 0 3.65vw;
   display: flex;
   justify-content: center;
   align-items: center;
