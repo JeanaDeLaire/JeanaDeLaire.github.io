@@ -2393,7 +2393,7 @@ body.is-touch .main {
   margin-left: 3vw;
 }
 
-#ttt-video {
+.video {
   width: inherit;
   height: auto;
 }

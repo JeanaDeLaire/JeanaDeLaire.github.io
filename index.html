@@ -109,16 +109,16 @@
               <!-- Gallery  -->
                 <div id="work" class="gallery">
                   <article class="from-left">
-                    <a class="image fit" data-toggle="modal" data-target="#bucket"><img src="images/thumbs/03.jpg"  alt="" /></a>
+                    <a class="image fit" data-toggle="modal" data-target="#pet"><img src="images/thumbs/04.jpg"  alt="" /></a>
                   </article>
                   <article class="from-left">
+                    <a class="image fit" data-toggle="modal" data-target="#bucket"><img src="images/thumbs/03.jpg"  alt="" /></a>
+                  </article>
+                  <article class="from-right">
                     <a class="image fit" data-toggle="modal" data-target="#rhody"><img src="images/thumbs/02.jpg" alt=""/></a>
                   </article>
                   <article class="from-right">
                     <a class="image fit" data-toggle="modal" data-target="#ttt"><img src="images/thumbs/01.jpg" alt=""/></a>
-                  </article>
-                  <article class="from-right">
-                    <a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
                   </article>
                   <!-- <article class="from-left">
                     <a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
@@ -133,6 +133,62 @@
             </div>
           </section>
 
+          <!-- Pet-Portal -->
+          <div class="modal fade" id="pet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:8%;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body image fit modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h2>Pet Portal</h2>
+                  <video class="video" controls="controls" width="375" height="auto"
+                   name="Video Name" src="images/fulls/pets.mov" autoplay muted loop></video>
+                  <div class="container" style="flex-direction: row; justify-content: center; align-items: center; width: inherit; text-align: center;">
+                  <div class="col-sm-12" style="">
+                    <a href="https://jeanadelaire.github.io/pet-portal-client/#/" data-target="#" target="_blank">Visit the app.</a>
+                  </div>
+                  <div class="col-sm-12" style="">
+                    <a href="https://github.com/JeanaDeLaire/pet-portal-client" data-target="#" target="_blank">View this project on github.</a>
+                  </div>
+                  </div>
+                  <div>
+                    <p>
+                      Pet Portal is a place to track pet health, care regiments, and build a custom carousel slideshow of pet photos. This full stack app is built in React.js with React Bootstrap and responsive CSS. The backend is built with an Express api. All resources are user owned and only accessed by owners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FileBucket -->
+          <div class="modal fade" id="bucket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:8%;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body image fit modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <img src="images/fulls/03.jpg"/>
+                  <div class="container" style="flex-direction: row; justify-content: center; align-items: center; width: inherit; text-align: center;">
+                  <div class="col-sm-12" style="">
+                    <a href="https://git-power.github.io/FileBucket-client/" data-target="#" target="_blank">Visit FileBucket</a>
+                  </div>
+                  <div class="col-sm-12" style="">
+                    <a href="https://github.com/Git-Power/FileBucket-client" data-target="#" target="_blank">View this project on github</a>
+                  </div>
+                  </div>
+                  <div>
+                    <p>
+                      This full-stack app was constructed for a team project during a web development immersive program through General Assembly. As a file management system with a focus on image files, FileBucket is deployed to Heroku and uses Express and mongodb to build the api. Image files are stored to AWS. Only user owned resources can be updated and deleted, while all resources within the database are open view. The front-end utilizes HTML5, CSS, Bootstrap, Javascript, jQuery, and a responsive Handlebars grid template for the image gallery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Tic-Tac-Toe -->
           <div class="modal fade" id="ttt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:8%;">
             <div class="modal-dialog" role="document">
@@ -142,9 +198,8 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                   <h2>Game Project</h2>
-                  <video id="ttt-video" controls="controls" width="375" height="auto"
+                  <video class="video" controls="controls" width="375" height="auto"
                    name="Video Name" src="images/fulls/ttt.mov"></video>
-                  <!-- <img src="images/fulls/01.jpg"/> -->
                   <div class="container" style="flex-direction: row; justify-content: center; align-items: center; width: inherit; text-align: center;">
                   <div class="col-sm-12" style="">
                     <a href="https://jeanadelaire.github.io/tic-tac-toe-client/" data-target="#" target="_blank">Go play Tic-Tac-Toe</a>
@@ -183,33 +238,6 @@
                   <div>
                     <p>
                       This full-stack app is deployed to Heroku and uses Rails as its back-end framework. The front-end utilizes HTML5, CSS and Bootstrap. Javascript and jQuery handle site interaction and help present data to users. Handlbars displays the information from the database through a grid template. The searchbar filters through keywords through javascript and pushes in relevant matches into a new array which is passed through handlebars. This project was completed for a full-stack development training course and I intend to further build out the site and add in the ability for users to add photos, comments, and site moderators.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- FileBucket -->
-          <div class="modal fade" id="bucket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed; top:8%;">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-body image fit modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <img src="images/fulls/03.jpg"/>
-                  <div class="container" style="flex-direction: row; justify-content: center; align-items: center; width: inherit; text-align: center;">
-                  <div class="col-sm-12" style="">
-                    <a href="https://git-power.github.io/FileBucket-client/" data-target="#" target="_blank">Visit FileBucket</a>
-                  </div>
-                  <div class="col-sm-12" style="">
-                    <a href="https://github.com/Git-Power/FileBucket-client" data-target="#" target="_blank">View this project on github</a>
-                  </div>
-                  </div>
-                  <div>
-                    <p>
-                      This full-stack app was constructed for a team project during a web development immersive program through General Assembly. As a file management system with a focus on image files, FileBucket is deployed to Heroku and uses Express and mongodb to build the api. Image files are stored to AWS. Only user owned resources can be updated and deleted, while all resources within the database are open view. The front-end utilizes HTML5, CSS, Bootstrap, Javascript, jQuery, and a responsive Handlebars grid template for the image gallery.
                     </p>
                   </div>
                 </div>
