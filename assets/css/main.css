@@ -149,6 +149,7 @@ q::after {
 .float-left {
   margin-left: 5%;
   margin-right: 2%;
+  color: rgba(61, 68, 76, 0.6);
 }
 
 mark {
@@ -210,6 +211,15 @@ body.is-preload *::after {
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
+}
+
+.modal a {
+  color: #3c454a;
+  font-weight: 520;
+}
+
+.modal a:hover {
+  color: #887d85;
 }
 
 .close {
@@ -1569,6 +1579,10 @@ body.is-touch .poptrox-popup .closer {
   display: block;
 }
 
+.gallery article .image:hover {
+  transform: scale(1.01);
+}
+
 .gallery article:nth-last-child(1n) {
   -moz-transition-delay: 0.05s;
   -webkit-transition-delay: 0.05s;
@@ -1961,10 +1975,7 @@ body.is-touch .poptrox-popup .closer {
   height: 3em;
   line-height: 3em;
   cursor: default;
-}
-
-#header h1 a {
-  font-size: 1.25em;
+  font-size: 1.12em;
 }
 
 #header nav {
@@ -1982,17 +1993,22 @@ body.is-touch .poptrox-popup .closer {
 #header nav ul li {
   display: inline-block;
   margin-left: 0.5em;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 #header nav ul li a {
   display: block;
   color: inherit;
   text-decoration: none;
-  height: 3em;
+  height: 3.5em;
   line-height: 3em;
   padding: 0 0.5em 0 0.5em;
   outline: 0;
+}
+
+#header nav ul li a:hover {
+  color: #887d85;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 736px) {
